@@ -1397,7 +1397,7 @@ body {
 .navigation__item {
   margin: 1rem; }
 
-.navigation__link:link, .navigation__link:visited {
+.navigation .navigation__link:link, .navigation .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -1408,14 +1408,19 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all .4s; }
-  .navigation__link:link span, .navigation__link:visited span {
+  .navigation .navigation__link:link span, .navigation .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
 
-.navigation__link:hover, .navigation__link:active {
+.navigation .navigation__link:hover, .navigation .navigation__link:active {
   background-position: 100%;
   color: #1626fb;
   transform: translateX(1rem); }
+
+.navigation .download-img {
+  display: flex;
+  align-items: flex-end;
+  height: 5rem; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
